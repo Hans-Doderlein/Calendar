@@ -23,17 +23,17 @@ $.each(timeblock, (index) => {
 });
 
 timeblock.on("click", ".saveBtn", (event) => {
-  let textArea = $(event.target).siblings("textarea");
-  let newEvent = textArea.val();
-  console.log(newEvent);
+  let textValue = $(event.target).siblings("textarea").val();
 
-  if (newEvent === " " || null || undefined) {
-    new event = "";
-    return;
-  } else {
-    events.push(newEvent);
+  let currentId = $(event.target).parent().attr("id");
+
+  if (textValue && textValue.trim() !== "") {
+    events.push({ currentId, textValue });
     localStorage.setItem("Events", JSON.stringify(events));
     events = JSON.parse(localStorage.getItem("Events"));
+    console.log(events);
+  } else {
+    console.log("Textarea cannot be empty.");
   }
 });
 
