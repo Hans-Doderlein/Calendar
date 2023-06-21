@@ -1,7 +1,6 @@
 $(function () {
   var currentHour = dayjs().hour();
   var timeblock = $(".time-block");
-  currentHour = 12;
 
   dayjs.extend(window.dayjs_plugin_advancedFormat);
 
@@ -22,6 +21,7 @@ $(function () {
     }
   });
 
+  // saves events when button is clicked
   timeblock.on("click", ".saveBtn", (event) => {
     let textValue = $(event.target).siblings("textarea").val();
 
@@ -40,6 +40,7 @@ $(function () {
     }
   });
 
+  //  displays previously stored events
   function displayEvents() {
     $.each(timeblock, (index) => {
       const block = $(timeblock[index]);
