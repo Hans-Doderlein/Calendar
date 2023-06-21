@@ -27,13 +27,19 @@ timeblock.on("click", ".saveBtn", (event) => {
 
   let currentId = $(event.target).parent().attr("id");
 
-  if (textValue && textValue.trim() !== "") {
-    events.push({ currentId, textValue });
-    localStorage.setItem("Events", JSON.stringify(events));
-    events = JSON.parse(localStorage.getItem("Events"));
-    console.log(events);
+  let currentClass = $(event.target).parent().attr("class");
+
+  if (currentClass.includes("future")) {
+    if (textValue && textValue.trim() !== "") {
+      events.push({ currentId, textValue });
+      localStorage.setItem("Events", JSON.stringify(events));
+      events = JSON.parse(localStorage.getItem("Events"));
+      console.log(events);
+    } else {
+      console.log("Textarea cannot be empty.");
+    }
   } else {
-    console.log("Textarea cannot be empty.");
+    console.log("can't add events in the past");
   }
 });
 
