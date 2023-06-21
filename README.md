@@ -4,6 +4,9 @@
 
 ## Screenshot
 
+
+![image](https://github.com/Hans-Doderlein/Calendar/assets/132940852/87a1f1e1-4d49-4ed2-8cb6-f09cfc1b3c7c)
+
 ## Description
 
 The purpose of this web application is to save events on a daily planner.
