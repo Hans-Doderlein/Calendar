@@ -1,36 +1,45 @@
+/* custom variables */
 :root {
   --pc: grey;
   --sc: aquamarine;
   --tc: rgb(254, 13, 150);
 }
 
+/* background is a gradient */
 body {
   background-image: linear-gradient(var(--pc) 0%, black 100%);
 }
 
+/* border to bottom of header */
 header {
   border-bottom: 5px solid var(--sc);
 }
+
+/* color and shadow h1 */
 header h1 {
   color: var(--tc);
   text-shadow: 1px 1px var(--sc);
 }
 
+/* color text in header */
 header p {
   color: var(--sc);
 }
 
+/* border and color footer */
 footer {
   border-top: 5px solid var(--tc);
   color: var(--sc);
 }
 
+/* color, background, and round border of hour container */
 .hour {
   background-color: var(--pc);
   color: var(--sc);
   border-radius: 12px 0 0 12px;
 }
 
+/* outline and border of timeblocks */
 .time-block {
   margin: 5px;
   padding: 0;
@@ -38,11 +47,13 @@ footer {
   border: 3px solid var(--tc);
 }
 
+/* on hover, timeblock recieves outline and glow effect */
 .time-block:hover {
   box-shadow: 0 0 1rem var(--sc);
   outline: 3px solid var(--sc);
 }
 
+/* stylization of theme button */
 #themeButton {
   border-radius: 5px;
   border: 3px solid var(--tc);
@@ -50,6 +61,7 @@ footer {
   background-color: var(--pc);
 }
 
+/* hover effect on theme button */
 #themeButton:hover {
   box-shadow: 0 0 1rem var(--sc);
   border: 3px solid var(--sc);

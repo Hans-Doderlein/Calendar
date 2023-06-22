@@ -1,35 +1,44 @@
+/* custom variables */
 :root {
   --pc: #d2d3db;
   --sc: #464fcd;
   --tc: #37474f;
 }
 
+/* gradient background of body */
 body {
   background-image: linear-gradient(var(--pc) 0%, rgb(60, 56, 56) 100%);
 }
 
+/* border on header bottom */
 header {
   border-bottom: 5px solid var(--tc);
 }
+
+/* color the h1 in the header */
 header h1 {
   color: var(--tc);
 }
 
+/* color the text in the header */
 header p {
   color: var(--sc);
 }
 
+/* color and border the footer */
 footer {
   border-top: 5px solid var(--tc);
   color: var(--sc);
 }
 
+/* style the hour container and text */
 .hour {
   background-color: var(--pc);
   color: var(--sc);
   border-radius: 12px 0 0 12px;
 }
 
+/* outline and border on timeblocks */
 .time-block {
   margin: 5px;
   padding: 0;
@@ -37,11 +46,13 @@ footer {
   border: 3px solid var(--tc);
 }
 
+/* hover effect on timeblocks */
 .time-block:hover {
   box-shadow: 0 0 1rem var(--sc);
   outline: 3px solid var(--sc);
 }
 
+/* style theme button */
 #themeButton {
   border-radius: 5px;
   border: 3px solid var(--tc);
@@ -49,11 +60,13 @@ footer {
   background-color: var(--pc);
 }
 
+/* hover effect of theme button */
 #themeButton:hover {
   box-shadow: 0 0 1rem var(--sc);
   border: 3px solid var(--sc);
 }
 
+/* round save button correctly */
 .saveBtn {
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
