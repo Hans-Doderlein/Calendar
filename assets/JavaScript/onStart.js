@@ -1,7 +1,6 @@
 $(function () {
   const timeblock = $(".time-block");
   var currentHour = dayjs().hour();
-  currentHour = 12;
 
   $.each(timeblock, (index) => {
     const currentTimeblock = $(timeblock[index]);
