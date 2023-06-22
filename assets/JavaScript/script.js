@@ -1,6 +1,7 @@
 $(function () {
   var currentHour = dayjs().hour();
   var timeblock = $(".time-block");
+  currentHour = 12;
 
   dayjs.extend(window.dayjs_plugin_advancedFormat);
 
@@ -49,4 +50,20 @@ $(function () {
   }
 
   displayEvents();
+
+  let modeSwitcher = document.getElementById("themeButton");
+  let theme;
+  const themeLink = document.getElementById("themeLink");
+
+  modeSwitcher.addEventListener("click", switchMode);
+
+  function switchMode(event) {
+    event.preventDefault();
+    theme = !theme;
+    if (theme) {
+      themeLink.setAttribute("href", "./assets/CSS/Light-styles.css");
+    } else {
+      themeLink.setAttribute("href", "./assets/CSS/Dark-style.css");
+    }
+  }
 });

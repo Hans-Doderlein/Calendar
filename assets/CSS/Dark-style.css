@@ -1,0 +1,58 @@
+:root {
+  --pc: grey;
+  --sc: aquamarine;
+  --tc: rgb(254, 13, 150);
+}
+
+body {
+  background-image: linear-gradient(var(--pc) 0%, black 100%);
+}
+
+header {
+  border-bottom: 5px solid var(--sc);
+}
+header h1 {
+  color: var(--tc);
+  text-shadow: 1px 1px var(--sc);
+}
+
+header p {
+  color: var(--sc);
+}
+
+footer {
+  border-top: 5px solid var(--tc);
+  color: var(--sc);
+}
+
+.hour {
+  background-color: var(--pc);
+  color: var(--sc);
+  border-radius: 12px 0 0 12px;
+  outline: var(--pc) solid 1px;
+  border-right-color: transparent;
+}
+
+.time-block {
+  margin: 5px;
+  padding: 0;
+  outline: 3px solid transparent;
+  border: 3px solid var(--tc);
+}
+
+.time-block:hover {
+  box-shadow: 0 0 1rem var(--sc);
+  outline: 3px solid var(--sc);
+}
+
+#themeButton {
+  border-radius: 5px;
+  border: 3px solid var(--tc);
+  color: var(--sc);
+  background-color: var(--pc);
+}
+
+#themeButton:hover {
+  box-shadow: 0 0 1rem var(--sc);
+  border: 3px solid var(--sc);
+}
