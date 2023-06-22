@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(var(--pc) 0%, black 100%);
+  background-image: linear-gradient(var(--pc) 0%, rgb(60, 56, 56) 100%);
 }
 
 header {
@@ -28,9 +28,6 @@ footer {
   background-color: var(--pc);
   color: var(--sc);
   border-radius: 12px 0 0 12px;
-  outline: var(--pc) solid 1px;
-
-  border-right-color: transparent;
 }
 
 .time-block {
